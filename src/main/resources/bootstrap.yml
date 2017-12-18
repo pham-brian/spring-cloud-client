@@ -1,0 +1,13 @@
+spring:
+    application:
+        name: configuration
+    profiles:
+        active: dev
+    cloud:
+        config:
+            uri: http://localhost:8888
+management:
+    security:
+        enabled: false
+server:
+    port: 8081
