@@ -15,15 +15,11 @@ public class SpringCloudClientApplication {
 	}
 }
 
-@RefreshScope
 @RestController
 class MessageRestController {
 
-	@Value("${msg}")
-	private String msg;
-
 	@RequestMapping("/msg")
 	String getMsg() {
-		return this.msg;
+		return "hello hieupx";
 	}
 }
