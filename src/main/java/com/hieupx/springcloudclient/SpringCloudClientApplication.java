@@ -19,7 +19,7 @@ public class SpringCloudClientApplication {
 @RestController
 class MessageRestController {
 
-	@Value("${msg}")
+	@Value("${branch}")
 	private String msg;
 
 	@RequestMapping("/msg")
